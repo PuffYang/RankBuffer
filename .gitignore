@@ -1,0 +1,35 @@
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python and editor artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+.idea/
+.vscode/
+verl/.agent/
+verl/.claude/
+verl/.codex/
+verl/.gemini/
+verl/AGENTS.md
+verl/CLAUDE.md
+
+# Experiment outputs and potentially identifying metadata
+/alpaca_eval2_results/
+/buffer_state/
+/checkpoint/
+/logs/
+/rollouts/
+/token_usage/
+/wandb/
+
+# Large local assets
+/data/train.jsonl
+/models/
